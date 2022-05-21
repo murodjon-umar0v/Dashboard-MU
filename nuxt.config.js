@@ -5,6 +5,12 @@ export default {
     rootURL: process.env.ROOT_URL || 'https://api.brainly.uz/'
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: "static",
+  ssr: false,
+  generate: {
+    fallback: true
+  },
+  
   head: {
     title: 'Murodjon Umarov Dashboard',
     htmlAttrs: {
